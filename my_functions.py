@@ -1,5 +1,5 @@
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 def logistic_growth(r = 1, k = 10, IC = 1, ts = 0, tf = 10, tstep = 0.1):
     t = np.arange(ts, tf + tstep, tstep)
@@ -13,4 +13,5 @@ def logistic_growth(r = 1, k = 10, IC = 1, ts = 0, tf = 10, tstep = 0.1):
     return t, N
 
 t, n = logistic_growth()
-print(n)
+plt.plot(t,n)
+plt.show()
