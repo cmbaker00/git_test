@@ -8,4 +8,9 @@ def logistic_growth(r = 1, k = 10, IC = 1, ts = 0, tf = 10, tstep = 0.1):
         if i == 0:
             N[i] = IC
         else:
-            N[i] = 
+            dndt = N[i-1]*r*(1-N[i-1]/k)*tstep
+            N[i] = N[i-1] + dndt
+    return t, N
+
+t, n = logistic_growth()
+print(n)
