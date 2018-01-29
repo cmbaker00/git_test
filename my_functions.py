@@ -12,6 +12,6 @@ def logistic_growth(r = 1, k = 10, IC = 1, ts = 0, tf = 10, tstep = 0.1):
             N[i] = N[i-1] + dndt
     return t, N
 
-t, n = logistic_growth()
+t, n = logistic_growth(tf = 5)
 plt.plot(t,n)
 plt.show()
