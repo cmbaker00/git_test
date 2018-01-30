@@ -1,13 +1,13 @@
 "# git_test" 
 
-##### Some Basic Git Commands
-# Creating a repo
+# Some Basic Git Commands
+## Creating a repo
 * Local repo  
 git init
 * Downloading a repo  
 git clone <url> .
 
-# Version control 
+## Version control 
 * Check which files have been changed  
 git status
 * Check what the changes are  
@@ -17,13 +17,13 @@ git add .
 * Commit changes  
 git commit -m "<comments>"
 
-# Sending changes to github
+## Sending changes to github
 * Always pull first to check you have the most most updated version  
 git pull origin master
 * Push changes  
 git push origin master
 
-# Branching code
+## Branching code
 * Get current branches  
 git branch
 * Create a branch  
